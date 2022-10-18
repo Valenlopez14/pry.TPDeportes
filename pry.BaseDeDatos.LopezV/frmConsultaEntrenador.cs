@@ -13,6 +13,7 @@ namespace pry.BaseDeDatos.LopezV
 {
     public partial class frmConsultaEntrenador : Form
     {
+        
         public frmConsultaEntrenador()
         {
             InitializeComponent();

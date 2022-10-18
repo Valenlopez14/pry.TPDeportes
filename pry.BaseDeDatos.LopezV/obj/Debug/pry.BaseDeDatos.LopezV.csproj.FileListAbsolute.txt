@@ -13,3 +13,18 @@ C:\Users\valen\OneDrive\Escritorio\Facultad\2do Semestre\Laboratorio de Programa
 C:\Users\valen\OneDrive\Escritorio\Facultad\2do Semestre\Laboratorio de Programacion II\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmConsultaEntrenador.resources
 C:\Users\valen\OneDrive\Escritorio\Facultad\2do Semestre\Laboratorio de Programacion II\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmRegistroDeportista.resources
 C:\Users\valen\OneDrive\Escritorio\Facultad\2do Semestre\Laboratorio de Programacion II\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmRegistroEntrenador.resources
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\bin\Debug\pry.BaseDeDatos.LopezV.exe.config
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\bin\Debug\pry.BaseDeDatos.LopezV.exe
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\bin\Debug\pry.BaseDeDatos.LopezV.pdb
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.csproj.AssemblyReference.cache
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.csproj.SuggestedBindingRedirects.cache
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmConsultaDeportista.resources
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmConsultaEntrenador.resources
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmPrincipal.resources
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmRegistroDeportista.resources
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmRegistroEntrenador.resources
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.Properties.Resources.resources
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.csproj.GenerateResource.cache
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.csproj.CoreCompileInputs.cache
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.exe
+C:\Users\valen\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.pdb

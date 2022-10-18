@@ -20,7 +20,7 @@ namespace pry.BaseDeDatos.LopezV
         public OleDbConnection QueQuieroEnLaBase;
         public OleDbConnection LectorDeConsultas;
 
-        public string varRutaBaseDatos = "C:\\Users\\valen\\OneDrive\\Escritorio\\Facultad\\2do Semestre\\Laboratorio de Programacion II\\pry.BaseDeDatos.LopezV";
+        public string varRutaBaseDatos = "DEPORTE.accdb";
         public frmPrincipal()
         {
             InitializeComponent();

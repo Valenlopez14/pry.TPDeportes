@@ -52,6 +52,7 @@
             this.cmdRegistrarEntr.TabIndex = 30;
             this.cmdRegistrarEntr.Text = "Registrar";
             this.cmdRegistrarEntr.UseVisualStyleBackColor = true;
+            this.cmdRegistrarEntr.Click += new System.EventHandler(this.cmdRegistrarEntr_Click);
             // 
             // txtCodigoEntr
             // 
@@ -200,6 +201,7 @@
             this.Controls.Add(this.lblCodigoEntr);
             this.Name = "frmRegistroEntrenador";
             this.Text = "frmRegistroEntrenador";
+            this.Load += new System.EventHandler(this.frmRegistroEntrenador_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

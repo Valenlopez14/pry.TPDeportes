@@ -16,5 +16,15 @@ namespace pry.BaseDeDatos.LopezV
         {
             InitializeComponent();
         }
+
+        private void cmdRegistrarEntr_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmRegistroEntrenador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
