@@ -26,6 +26,7 @@ namespace pry.BaseDeDatos.LopezV
 
         private void cmdListar_Click(object sender, EventArgs e)
         {
+            GrillaConsultaDepor.Rows.Clear();
             try
             {
                 conexionBase = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source =" + rutaDeportista);
