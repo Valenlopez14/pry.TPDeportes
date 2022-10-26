@@ -122,21 +122,21 @@
             this.txtNombre.Location = new System.Drawing.Point(155, 85);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 8;
+            this.txtNombre.TabIndex = 1;
             // 
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(155, 114);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
-            this.txtApellido.TabIndex = 9;
+            this.txtApellido.TabIndex = 2;
             // 
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(155, 143);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(100, 20);
-            this.txtDireccion.TabIndex = 10;
+            this.txtDireccion.TabIndex = 3;
             // 
             // lstDeporte
             // 
@@ -150,21 +150,21 @@
             this.lstDeporte.Location = new System.Drawing.Point(155, 229);
             this.lstDeporte.Name = "lstDeporte";
             this.lstDeporte.Size = new System.Drawing.Size(100, 21);
-            this.lstDeporte.TabIndex = 13;
+            this.lstDeporte.TabIndex = 6;
             // 
             // txtCodigoDepor
             // 
             this.txtCodigoDepor.Location = new System.Drawing.Point(155, 53);
             this.txtCodigoDepor.Name = "txtCodigoDepor";
             this.txtCodigoDepor.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigoDepor.TabIndex = 1;
+            this.txtCodigoDepor.TabIndex = 0;
             // 
             // cmdRegistrar
             // 
             this.cmdRegistrar.Location = new System.Drawing.Point(191, 278);
             this.cmdRegistrar.Name = "cmdRegistrar";
             this.cmdRegistrar.Size = new System.Drawing.Size(75, 23);
-            this.cmdRegistrar.TabIndex = 15;
+            this.cmdRegistrar.TabIndex = 7;
             this.cmdRegistrar.Text = "Registrar";
             this.cmdRegistrar.UseVisualStyleBackColor = true;
             this.cmdRegistrar.Click += new System.EventHandler(this.cmdRegistrar_Click);
@@ -175,7 +175,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(25, 20);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(221, 16);
+            this.lblTitulo.Size = new System.Drawing.Size(222, 16);
             this.lblTitulo.TabIndex = 33;
             this.lblTitulo.Text = "REGISTRO DE DEPORTISTAS";
             // 
@@ -185,14 +185,14 @@
             this.mskEdad.Mask = "99";
             this.mskEdad.Name = "mskEdad";
             this.mskEdad.Size = new System.Drawing.Size(100, 20);
-            this.mskEdad.TabIndex = 34;
+            this.mskEdad.TabIndex = 5;
             // 
             // mskTelefono
             // 
             this.mskTelefono.Location = new System.Drawing.Point(155, 172);
             this.mskTelefono.Name = "mskTelefono";
             this.mskTelefono.Size = new System.Drawing.Size(100, 20);
-            this.mskTelefono.TabIndex = 35;
+            this.mskTelefono.TabIndex = 4;
             // 
             // frmRegistroDeportista
             // 

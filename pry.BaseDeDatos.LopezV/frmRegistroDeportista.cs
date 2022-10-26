@@ -17,7 +17,7 @@ namespace pry.BaseDeDatos.LopezV
         public OleDbCommand comandoBD; //representa una instruccion 
 
         //declaracion de la ruta  que esta la BD
-        public string RutaBD = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source" + "DEPORTE.accdb";
+        public string RutaBD = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source = DEPORTE.accdb";
 
         public frmRegistroDeportista()
         {
@@ -35,7 +35,7 @@ namespace pry.BaseDeDatos.LopezV
             string NombreDeportista = txtNombre.Text;
             string ApellidoDeportista = txtApellido.Text;
             string DireccionDeportista = txtDireccion.Text;
-            Int32 TelefonoDeportista = Convert.ToInt32(mskTelefono);
+            Int32 TelefonoDeportista = Convert.ToInt32(mskTelefono.Text);
             Int32 EdadDeportista = Convert.ToInt32(mskEdad.Text);
             string Deporte = Convert.ToString(lstDeporte.SelectedItem);
 
@@ -48,14 +48,19 @@ namespace pry.BaseDeDatos.LopezV
 
                 comandoBD.Connection = conexionBD;//conexion al origen de datos
                 comandoBD.CommandType = CommandType.Text; //comando para insertar datos
-                comandoBD.CommandText = "INSERT INTO" + "DEPORTISTA([CODIGO DEPORTISTA], [NOMBRE], [APELLIDO],[DIRECCION],[TELFONO], [EDAD], [DEPORTE])" +
-                    "VALUES('" + IdDeportista + "' , '" + NombreDeportista + "','" + ApellidoDeportista + "','" + DireccionDeportista + "','" + TelefonoDeportista + "','" + EdadDeportista + "','" + lstDeporte + "','";
+                comandoBD.CommandText = "INSERT INTO DEPORTISTA ([CODIGO DEPORTISTA], NOMBRE, APELLIDO, DIRECCION,TELEFONO, EDAD, DEPORTE)" +
+                    "VALUES(" + "'"+IdDeportista + "'" +
+                    "," +"'" + NombreDeportista + "'"+ "," 
+                    + "'" + ApellidoDeportista + "'"+ "," 
+                    + "'" + DireccionDeportista + "'" + "," 
+                    + "'" + TelefonoDeportista.ToString() + "'"+
+                    "," + "'" + EdadDeportista + "'" + "," + "'" + Deporte + "'" + ")";
                 comandoBD.ExecuteNonQuery(); //numero de filas afectuadas
                 MessageBox.Show("Tus datos fueron ingresados con éxito");
             }
             catch (Exception mensaje)
             {
-               MessageBox.Show("");
+               MessageBox.Show("Error, datos no cargados." + mensaje.Message);
                 //throw;
             }
             //Limpiar todas las cajas de la interfaz para usar sin problemas

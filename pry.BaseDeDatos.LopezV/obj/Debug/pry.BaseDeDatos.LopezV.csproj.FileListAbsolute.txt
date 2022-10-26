@@ -32,7 +32,6 @@ C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\bin\Debug\pr
 C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\bin\Debug\pry.BaseDeDatos.LopezV.exe
 C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\bin\Debug\pry.BaseDeDatos.LopezV.pdb
 C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.csproj.AssemblyReference.cache
-C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.csproj.SuggestedBindingRedirects.cache
 C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmConsultaDeportista.resources
 C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmConsultaEntrenador.resources
 C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmPrincipal.resources
