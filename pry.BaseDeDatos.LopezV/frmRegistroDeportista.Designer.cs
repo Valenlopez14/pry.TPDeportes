@@ -38,12 +38,13 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.mskTelefono = new System.Windows.Forms.MaskedTextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
             this.lstDeporte = new System.Windows.Forms.ComboBox();
             this.txtCodigoDepor = new System.Windows.Forms.TextBox();
             this.cmdRegistrar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.mskEdad = new System.Windows.Forms.MaskedTextBox();
+            this.mskTelefono = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // lblCodigoDepor
@@ -137,21 +138,6 @@
             this.txtDireccion.Size = new System.Drawing.Size(100, 20);
             this.txtDireccion.TabIndex = 10;
             // 
-            // mskTelefono
-            // 
-            this.mskTelefono.Location = new System.Drawing.Point(155, 172);
-            this.mskTelefono.Mask = "0000-000000";
-            this.mskTelefono.Name = "mskTelefono";
-            this.mskTelefono.Size = new System.Drawing.Size(100, 20);
-            this.mskTelefono.TabIndex = 11;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Location = new System.Drawing.Point(155, 201);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(100, 20);
-            this.txtEdad.TabIndex = 12;
-            // 
             // lstDeporte
             // 
             this.lstDeporte.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -181,6 +167,7 @@
             this.cmdRegistrar.TabIndex = 15;
             this.cmdRegistrar.Text = "Registrar";
             this.cmdRegistrar.UseVisualStyleBackColor = true;
+            this.cmdRegistrar.Click += new System.EventHandler(this.cmdRegistrar_Click);
             // 
             // lblTitulo
             // 
@@ -192,17 +179,32 @@
             this.lblTitulo.TabIndex = 33;
             this.lblTitulo.Text = "REGISTRO DE DEPORTISTAS";
             // 
+            // mskEdad
+            // 
+            this.mskEdad.Location = new System.Drawing.Point(155, 203);
+            this.mskEdad.Mask = "99";
+            this.mskEdad.Name = "mskEdad";
+            this.mskEdad.Size = new System.Drawing.Size(100, 20);
+            this.mskEdad.TabIndex = 34;
+            // 
+            // mskTelefono
+            // 
+            this.mskTelefono.Location = new System.Drawing.Point(155, 172);
+            this.mskTelefono.Name = "mskTelefono";
+            this.mskTelefono.Size = new System.Drawing.Size(100, 20);
+            this.mskTelefono.TabIndex = 35;
+            // 
             // frmRegistroDeportista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(278, 316);
+            this.Controls.Add(this.mskTelefono);
+            this.Controls.Add(this.mskEdad);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.cmdRegistrar);
             this.Controls.Add(this.txtCodigoDepor);
             this.Controls.Add(this.lstDeporte);
-            this.Controls.Add(this.txtEdad);
-            this.Controls.Add(this.mskTelefono);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtNombre);
@@ -233,11 +235,12 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.MaskedTextBox mskTelefono;
-        private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.ComboBox lstDeporte;
         private System.Windows.Forms.TextBox txtCodigoDepor;
         private System.Windows.Forms.Button cmdRegistrar;
         private System.Windows.Forms.Label lblTitulo;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.MaskedTextBox mskEdad;
+        private System.Windows.Forms.MaskedTextBox mskTelefono;
     }
 }
