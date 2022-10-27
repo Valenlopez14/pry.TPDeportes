@@ -58,6 +58,30 @@
     <Compile Include="frmConsultaEntrenador.Designer.cs">
       <DependentUpon>frmConsultaEntrenador.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEliminarDeportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarDeportista.Designer.cs">
+      <DependentUpon>frmEliminarDeportista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarEntrenador.Designer.cs">
+      <DependentUpon>frmEliminarEntrenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarDeportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarDeportista.Designer.cs">
+      <DependentUpon>frmModificarDeportista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarEntrenador.Designer.cs">
+      <DependentUpon>frmModificarEntrenador.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +107,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmConsultaEntrenador.resx">
       <DependentUpon>frmConsultaEntrenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarDeportista.resx">
+      <DependentUpon>frmEliminarDeportista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarEntrenador.resx">
+      <DependentUpon>frmEliminarEntrenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarDeportista.resx">
+      <DependentUpon>frmModificarDeportista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarEntrenador.resx">
+      <DependentUpon>frmModificarEntrenador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

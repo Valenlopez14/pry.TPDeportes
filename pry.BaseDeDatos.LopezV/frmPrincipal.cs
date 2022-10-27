@@ -75,5 +75,29 @@ namespace pry.BaseDeDatos.LopezV
                 //throw;
             }
         }
+
+        private void deportistaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmModificarDeportista frmModificarDeportista = new frmModificarDeportista();
+            frmModificarDeportista.ShowDialog();
+        }
+
+        private void entrenadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmModificarEntrenador frmModificarEntrenador = new frmModificarEntrenador();
+            frmModificarEntrenador.ShowDialog();
+        }
+
+        private void deportistaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmEliminarDeportista frmEliminarDeportista = new frmEliminarDeportista();
+            frmEliminarDeportista.ShowDialog();
+        }
+
+        private void entrenadorToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmEliminarEntrenador frmEliminarEntrenador = new frmEliminarEntrenador();
+            frmEliminarEntrenador.ShowDialog();
+        }
     }
 }

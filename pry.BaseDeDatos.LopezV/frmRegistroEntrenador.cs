@@ -14,11 +14,11 @@ namespace pry.BaseDeDatos.LopezV
 {
     public partial class frmRegistroEntrenador : Form
     {
-        public OleDbConnection conexionBD; //declaracion deconexion a Base de datos
-        public OleDbCommand comandoBD; //representa una instruccion
+        public OleDbConnection conexionBD; //declaracion de conexion de BD
+        public OleDbCommand comandoBD;//representa una instruccion 
 
-        //declarar la ruta que esta la Base de Datos
-        public string RutaBD = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source = DEPORTE.accdb";
+        //declaracion de la ruta donde esta alojada la BD
+        public string RutaBD = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + "DEPORTE.accdb";
 
         public frmRegistroEntrenador()
         {
@@ -27,17 +27,13 @@ namespace pry.BaseDeDatos.LopezV
 
         private void cmdRegistrarEntr_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void frmRegistroEntrenador_Load(object sender, EventArgs e)
-        {
-            string IdEntrenador = txtNombreEntr.Text;
-            string NombreEntrenador = txtApellidoEntr.Text;
+            //declaracion de variables a grabar
+            string IdEntrenadores = txtCodigoEntr.Text;
+            string NombreEntrenador = txtNombreEntr.Text;
             string ApellidoEntrenador = txtApellidoEntr.Text;
-            string DireccionEntrenador = txtDireccionEntr.Text;
-            string ProvinciaEntrenador = Convert.ToString(lstProvinciaEntr.SelectedItem);
-            string DeporteEntrenador = Convert.ToString(lstDeporteEntr);
+            string DireccionEntrenador = Convert.ToString(txtDireccionEntr.Text);
+            string ProvinciaEntrenador = Convert.ToString(lstProvinciaEntr.Text);
+            string Deporte = Convert.ToString(lstDeporteEntr.SelectedItem);
 
             try
             {
@@ -45,20 +41,32 @@ namespace pry.BaseDeDatos.LopezV
                 conexionBD.Open();
                 comandoBD = new OleDbCommand();
 
-                comandoBD.Connection = conexionBD; //conexion al origen de los datos
+                comandoBD.Connection = conexionBD; //conexion al origen de datos
                 comandoBD.CommandType = CommandType.Text; //comando para insertar datos
-                comandoBD.CommandText = "INSERT INTO ENTRENADORES ([CODIGO DEPORTISTA], NOMBRE, APELLIDO, DIRECCION, PROVINCIA, DEPORTE)" +
-                    "VALUES(" + "'" + IdEntrenador + "'" + "," + "'" + NombreEntrenador + "'" + "," + "'" + ApellidoEntrenador + "'" + "," + "'" +
-                    DireccionEntrenador + "'" + "," + "'" + ProvinciaEntrenador + "'" + "," + "'" + DeporteEntrenador + "'" + "," + "'" + ")";
-                comandoBD.ExecuteNonQuery(); //numero de filas afectuadas
-                MessageBox.Show("Datos cargados correctamente. :)");
+                comandoBD.CommandText = "INSERT INTO" + " ENTRENADORES ([CODIGO ENTRENADOR], [NOMBRE], [APELLIDO], [DIRECCION], [PROVINCIA], [DEPORTE])" +
+                        " VALUES ('" + IdEntrenadores + "','" + NombreEntrenador + "','" + ApellidoEntrenador + "','" + DireccionEntrenador + "','" + ProvinciaEntrenador + "','" + Deporte + "')";
+
+                comandoBD.ExecuteNonQuery();//numero de filas afectadas
+                MessageBox.Show("Tus datos fueron ingresados con exito");
             }
             catch (Exception mensaje)
             {
-                MessageBox.Show("Datos Incorrectos. " + mensaje);
+                MessageBox.Show("Error, datos no cargados." + mensaje.Message);
+
                 //throw;
             }
+            //luego de grabar debemos limpiar las cajas de textos
+            txtCodigoEntr.Text = "";
+            txtCodigoEntr.Text = "";
+            txtDireccionEntr.Text = "";
+            txtNombreEntr.Text = "";
+            lstProvinciaEntr.SelectedIndex = -1;
+            lstDeporteEntr.SelectedIndex = -1;
+        }
 
+        private void frmRegistroEntrenador_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

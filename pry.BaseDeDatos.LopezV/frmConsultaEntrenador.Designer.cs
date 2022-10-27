@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.GrillaConsultaEntr = new System.Windows.Forms.DataGridView();
-            this.cmdListar = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmdListar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GrillaConsultaEntr)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,16 +51,6 @@
             this.GrillaConsultaEntr.Name = "GrillaConsultaEntr";
             this.GrillaConsultaEntr.Size = new System.Drawing.Size(538, 335);
             this.GrillaConsultaEntr.TabIndex = 1;
-            // 
-            // cmdListar
-            // 
-            this.cmdListar.Location = new System.Drawing.Point(451, 353);
-            this.cmdListar.Name = "cmdListar";
-            this.cmdListar.Size = new System.Drawing.Size(75, 23);
-            this.cmdListar.TabIndex = 2;
-            this.cmdListar.Text = "Listar";
-            this.cmdListar.UseVisualStyleBackColor = true;
-            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
             // 
             // Column1
             // 
@@ -87,11 +77,21 @@
             this.Column5.HeaderText = "Deporte";
             this.Column5.Name = "Column5";
             // 
+            // cmdListar
+            // 
+            this.cmdListar.Location = new System.Drawing.Point(451, 353);
+            this.cmdListar.Name = "cmdListar";
+            this.cmdListar.Size = new System.Drawing.Size(75, 23);
+            this.cmdListar.TabIndex = 2;
+            this.cmdListar.Text = "Listar";
+            this.cmdListar.UseVisualStyleBackColor = true;
+            this.cmdListar.Click += new System.EventHandler(this.cmdListar_Click);
+            // 
             // frmConsultaEntrenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 388);
+            this.ClientSize = new System.Drawing.Size(538, 397);
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.GrillaConsultaEntr);
             this.Name = "frmConsultaEntrenador";
