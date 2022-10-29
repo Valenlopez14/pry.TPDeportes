@@ -16,5 +16,15 @@ namespace pry.BaseDeDatos.LopezV
         {
             InitializeComponent();
         }
+
+        private void cmdBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

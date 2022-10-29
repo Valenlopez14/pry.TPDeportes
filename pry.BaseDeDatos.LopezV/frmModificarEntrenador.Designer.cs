@@ -55,6 +55,7 @@
             this.cmdBuscar.TabIndex = 0;
             this.cmdBuscar.Text = "Buscar";
             this.cmdBuscar.UseVisualStyleBackColor = true;
+            this.cmdBuscar.Click += new System.EventHandler(this.cmdBuscar_Click);
             // 
             // cmdGuardar
             // 
@@ -65,6 +66,7 @@
             this.cmdGuardar.TabIndex = 1;
             this.cmdGuardar.Text = "Guardar";
             this.cmdGuardar.UseVisualStyleBackColor = true;
+            this.cmdGuardar.Click += new System.EventHandler(this.cmdGuardar_Click);
             // 
             // lblCodigoEntrenador
             // 

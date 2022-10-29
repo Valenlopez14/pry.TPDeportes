@@ -42,6 +42,10 @@
             this.lblCodigoDeportistaN = new System.Windows.Forms.Label();
             this.lblCodigoDeportista = new System.Windows.Forms.Label();
             this.cmdGuardar = new System.Windows.Forms.Button();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.lblDeporte = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtCodigoDeporBusc
@@ -170,11 +174,55 @@
             this.cmdGuardar.Text = "Guardar";
             this.cmdGuardar.UseVisualStyleBackColor = true;
             // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(13, 139);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(58, 15);
+            this.lblNombre.TabIndex = 33;
+            this.lblNombre.Text = "Nombre";
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Location = new System.Drawing.Point(12, 171);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(59, 15);
+            this.lblApellido.TabIndex = 34;
+            this.lblApellido.Text = "Apellido";
+            // 
+            // lblEdad
+            // 
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdad.Location = new System.Drawing.Point(12, 268);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(40, 15);
+            this.lblEdad.TabIndex = 35;
+            this.lblEdad.Text = "Edad";
+            // 
+            // lblDeporte
+            // 
+            this.lblDeporte.AutoSize = true;
+            this.lblDeporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeporte.Location = new System.Drawing.Point(15, 299);
+            this.lblDeporte.Name = "lblDeporte";
+            this.lblDeporte.Size = new System.Drawing.Size(58, 15);
+            this.lblDeporte.TabIndex = 36;
+            this.lblDeporte.Text = "Deporte";
+            // 
             // frmEliminarDeportista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(264, 387);
+            this.Controls.Add(this.lblDeporte);
+            this.Controls.Add(this.lblEdad);
+            this.Controls.Add(this.lblApellido);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.txtCodigoDeporBusc);
             this.Controls.Add(this.txtDeporte);
             this.Controls.Add(this.txtEdad);
@@ -212,5 +260,9 @@
         private System.Windows.Forms.Label lblCodigoDeportistaN;
         private System.Windows.Forms.Label lblCodigoDeportista;
         private System.Windows.Forms.Button cmdGuardar;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.Label lblEdad;
+        private System.Windows.Forms.Label lblDeporte;
     }
 }
