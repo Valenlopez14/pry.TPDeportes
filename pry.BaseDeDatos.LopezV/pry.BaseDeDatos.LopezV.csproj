@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsDeportista.cs" />
+    <Compile Include="clsEntrenador.cs" />
     <Compile Include="frmConsultaDeportista.cs">
       <SubType>Form</SubType>
     </Compile>
