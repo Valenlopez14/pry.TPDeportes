@@ -99,3 +99,7 @@ C:\Users\valen\OneDrive\Escritorio\REPOS.BASEDTS\pry.BaseDeDatos.LopezV\obj\Debu
 C:\Users\valen\OneDrive\Escritorio\REPOS.BASEDTS\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.csproj.CoreCompileInputs.cache
 C:\Users\valen\OneDrive\Escritorio\REPOS.BASEDTS\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.exe
 C:\Users\valen\OneDrive\Escritorio\REPOS.BASEDTS\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.pdb
+C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmEliminarDeportista.resources
+C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmEliminarEntrenador.resources
+C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmModificarDeportista.resources
+C:\Users\Alumno\Source\Repos\pry.BaseDeDatos\pry.BaseDeDatos.LopezV\obj\Debug\pry.BaseDeDatos.LopezV.frmModificarEntrenador.resources

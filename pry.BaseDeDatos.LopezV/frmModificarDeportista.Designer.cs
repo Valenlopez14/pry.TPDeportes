@@ -39,13 +39,13 @@
             this.lblDeporte = new System.Windows.Forms.Label();
             this.cmdBuscar = new System.Windows.Forms.Button();
             this.txtCodigoDepor = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtDeporte = new System.Windows.Forms.TextBox();
             this.txtCodigoDeporBusc = new System.Windows.Forms.TextBox();
+            this.mskTelefono = new System.Windows.Forms.MaskedTextBox();
+            this.mskEdad = new System.Windows.Forms.MaskedTextBox();
+            this.lstDeporte = new System.Windows.Forms.ComboBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cmdGuardar
@@ -155,25 +155,14 @@
             this.txtCodigoDepor.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.txtCodigoDepor.Location = new System.Drawing.Point(140, 126);
             this.txtCodigoDepor.Name = "txtCodigoDepor";
-            this.txtCodigoDepor.ReadOnly = true;
             this.txtCodigoDepor.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoDepor.TabIndex = 11;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.txtNombre.Location = new System.Drawing.Point(140, 160);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.ReadOnly = true;
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 12;
             // 
             // txtApellido
             // 
             this.txtApellido.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.txtApellido.Location = new System.Drawing.Point(140, 192);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.ReadOnly = true;
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
             this.txtApellido.TabIndex = 13;
             // 
@@ -185,30 +174,6 @@
             this.txtDireccion.Size = new System.Drawing.Size(100, 20);
             this.txtDireccion.TabIndex = 14;
             // 
-            // txtTelefono
-            // 
-            this.txtTelefono.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.txtTelefono.Location = new System.Drawing.Point(140, 259);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefono.TabIndex = 15;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.txtEdad.Location = new System.Drawing.Point(140, 289);
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(100, 20);
-            this.txtEdad.TabIndex = 16;
-            // 
-            // txtDeporte
-            // 
-            this.txtDeporte.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.txtDeporte.Location = new System.Drawing.Point(140, 320);
-            this.txtDeporte.Name = "txtDeporte";
-            this.txtDeporte.Size = new System.Drawing.Size(100, 20);
-            this.txtDeporte.TabIndex = 17;
-            // 
             // txtCodigoDeporBusc
             // 
             this.txtCodigoDeporBusc.Location = new System.Drawing.Point(140, 29);
@@ -216,18 +181,47 @@
             this.txtCodigoDeporBusc.Size = new System.Drawing.Size(100, 20);
             this.txtCodigoDeporBusc.TabIndex = 18;
             // 
+            // mskTelefono
+            // 
+            this.mskTelefono.Location = new System.Drawing.Point(140, 259);
+            this.mskTelefono.Name = "mskTelefono";
+            this.mskTelefono.Size = new System.Drawing.Size(100, 20);
+            this.mskTelefono.TabIndex = 19;
+            // 
+            // mskEdad
+            // 
+            this.mskEdad.Location = new System.Drawing.Point(140, 286);
+            this.mskEdad.Name = "mskEdad";
+            this.mskEdad.Size = new System.Drawing.Size(100, 20);
+            this.mskEdad.TabIndex = 20;
+            // 
+            // lstDeporte
+            // 
+            this.lstDeporte.FormattingEnabled = true;
+            this.lstDeporte.Location = new System.Drawing.Point(140, 325);
+            this.lstDeporte.Name = "lstDeporte";
+            this.lstDeporte.Size = new System.Drawing.Size(100, 21);
+            this.lstDeporte.TabIndex = 21;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(140, 159);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 22;
+            // 
             // frmModificarDeportista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(258, 403);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.lstDeporte);
+            this.Controls.Add(this.mskEdad);
+            this.Controls.Add(this.mskTelefono);
             this.Controls.Add(this.txtCodigoDeporBusc);
-            this.Controls.Add(this.txtDeporte);
-            this.Controls.Add(this.txtEdad);
-            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.txtApellido);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCodigoDepor);
             this.Controls.Add(this.cmdBuscar);
             this.Controls.Add(this.lblDeporte);
@@ -260,12 +254,12 @@
         private System.Windows.Forms.Label lblDeporte;
         private System.Windows.Forms.Button cmdBuscar;
         private System.Windows.Forms.TextBox txtCodigoDepor;
-        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtTelefono;
-        private System.Windows.Forms.TextBox txtEdad;
-        private System.Windows.Forms.TextBox txtDeporte;
         private System.Windows.Forms.TextBox txtCodigoDeporBusc;
+        private System.Windows.Forms.MaskedTextBox mskTelefono;
+        private System.Windows.Forms.MaskedTextBox mskEdad;
+        private System.Windows.Forms.ComboBox lstDeporte;
+        private System.Windows.Forms.TextBox txtNombre;
     }
 }

@@ -29,7 +29,7 @@ namespace pry.BaseDeDatos.LopezV
         private string DireccionDepor;
         private Int32 TelefonoDepor;
         private Int32 EdadDepor;
-        private string Deporte;
+        private string Deportes;
 
         public string CodigoDeportista
         {
@@ -61,7 +61,7 @@ namespace pry.BaseDeDatos.LopezV
             get { return EdadDepor; }
             set { EdadDepor = value; }
         }
-        public string Deportes
+        public string Deporte
         {
             get { return Deportes; }
             set { Deportes = value; }
@@ -94,6 +94,8 @@ namespace pry.BaseDeDatos.LopezV
             {
                 //Conectar la base de datos
                 conexion.ConnectionString = RutaBD;
+                //Abrir base
+                conexion.Open();
                 //Conectar elcomando a la BD
                 comando.Connection = conexion;
                 //Traer la tabla desde acces
@@ -116,7 +118,7 @@ namespace pry.BaseDeDatos.LopezV
                             DireccionDepor = lector.GetString (3);
                             TelefonoDepor = Convert.ToInt32(lector.GetString (4));
                             EdadDepor = lector.GetInt32 (5);
-                            Deporte = lector.GetString (6);
+                            Deportes = lector.GetString (6);
                         }
                     }
                 }
