@@ -41,7 +41,7 @@ namespace pry.BaseDeDatos.LopezV
 
         private void cmdGuardar_Click(object sender, EventArgs e)
         {
-
+            string varCodigoBusc = txtCodigoBusc.Text;
             clsEntrenador ModificarEntr = new clsEntrenador();
 
             ModificarEntr.NombreEntrenador = txtNombre.Text;

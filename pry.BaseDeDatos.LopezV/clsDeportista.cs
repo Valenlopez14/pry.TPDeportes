@@ -137,7 +137,7 @@ namespace pry.BaseDeDatos.LopezV
         {
             try
             {
-                string SQL = "UPDATE DEPORTISTA SET [DIRECCION] = '" + Direccion + "', [TELEFONO] = " + Telefono + ", [EDAD] = " + Edad + ", [DEPORTE] = '" + Deporte + "' WHERE [CODIGO DEPORTISTA] = '" + varCodigoDepor + "'";
+                string SQL = "UPDATE DEPORTISTA SET [NOMBRE] = '" + Nombre + "',[APELLIDO] = '" + Apellido + "',[DIRECCION] = '" + Direccion + "', [TELEFONO] = " + Telefono + ", [EDAD] = " + Edad + ", [DEPORTE] = '" + Deporte + "' WHERE [CODIGO DEPORTISTA] = '" + varCodigoDepor + "'";
                 //conectar a la BD
                 conexion.ConnectionString = RutaBD;
                 conexion.Open();
