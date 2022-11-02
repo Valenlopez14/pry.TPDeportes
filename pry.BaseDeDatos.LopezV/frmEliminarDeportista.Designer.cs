@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEliminarDeportista));
             this.txtCodigoDeporBusc = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -242,6 +243,7 @@
             this.Controls.Add(this.lblCodigoDeportistaN);
             this.Controls.Add(this.lblCodigoDeportista);
             this.Controls.Add(this.cmdEliminar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmEliminarDeportista";
             this.Text = "Eliminar Deportista";
             this.ResumeLayout(false);

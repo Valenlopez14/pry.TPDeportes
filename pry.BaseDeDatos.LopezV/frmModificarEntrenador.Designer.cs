@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModificarEntrenador));
             this.cmdBuscar = new System.Windows.Forms.Button();
             this.cmdGuardar = new System.Windows.Forms.Button();
             this.lblCodigoEntrenador = new System.Windows.Forms.Label();
@@ -234,6 +235,7 @@
             this.Controls.Add(this.lblCodigoEntrenador);
             this.Controls.Add(this.cmdGuardar);
             this.Controls.Add(this.cmdBuscar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmModificarEntrenador";
             this.Text = "ModificarEntrenador";
             this.ResumeLayout(false);

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegistroEntrenador));
             this.cmdRegistrarEntr = new System.Windows.Forms.Button();
             this.txtCodigoEntr = new System.Windows.Forms.TextBox();
             this.lstDeporteEntr = new System.Windows.Forms.ComboBox();
@@ -199,6 +200,7 @@
             this.Controls.Add(this.lblApellidoEntr);
             this.Controls.Add(this.lblNombreEntr);
             this.Controls.Add(this.lblCodigoEntr);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmRegistroEntrenador";
             this.Text = "frmRegistroEntrenador";
             this.Load += new System.EventHandler(this.frmRegistroEntrenador_Load);

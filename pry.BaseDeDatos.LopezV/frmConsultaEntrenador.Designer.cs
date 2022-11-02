@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultaEntrenador));
             this.GrillaConsultaEntr = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -94,6 +95,7 @@
             this.ClientSize = new System.Drawing.Size(538, 397);
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.GrillaConsultaEntr);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConsultaEntrenador";
             this.Text = "Consulta Entrenador";
             ((System.ComponentModel.ISupportInitialize)(this.GrillaConsultaEntr)).EndInit();
