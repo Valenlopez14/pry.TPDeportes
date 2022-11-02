@@ -175,7 +175,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(25, 20);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(222, 16);
+            this.lblTitulo.Size = new System.Drawing.Size(221, 16);
             this.lblTitulo.TabIndex = 33;
             this.lblTitulo.Text = "REGISTRO DE DEPORTISTAS";
             // 
@@ -190,6 +190,7 @@
             // mskTelefono
             // 
             this.mskTelefono.Location = new System.Drawing.Point(155, 172);
+            this.mskTelefono.Mask = "999999999";
             this.mskTelefono.Name = "mskTelefono";
             this.mskTelefono.Size = new System.Drawing.Size(100, 20);
             this.mskTelefono.TabIndex = 4;
@@ -216,7 +217,7 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigoDepor);
             this.Name = "frmRegistroDeportista";
-            this.Text = "frmRegistroDeportista";
+            this.Text = "Registro Deportista";
             this.Load += new System.EventHandler(this.frmRegistroDeportista_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

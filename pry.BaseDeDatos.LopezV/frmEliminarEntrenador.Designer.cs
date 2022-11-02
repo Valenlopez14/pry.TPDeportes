@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigoEntrenador = new System.Windows.Forms.TextBox();
+            this.txtCodigoEntrBuscado = new System.Windows.Forms.TextBox();
             this.lblDeporteEntr = new System.Windows.Forms.Label();
             this.lblProvinciaEntr = new System.Windows.Forms.Label();
             this.lblDireccionEntr = new System.Windows.Forms.Label();
@@ -42,68 +40,51 @@
             this.lblNombreEntr = new System.Windows.Forms.Label();
             this.lblCodigoEntrenadorBusq = new System.Windows.Forms.Label();
             this.lblCodigoEntrenador = new System.Windows.Forms.Label();
-            this.cmdGuardar = new System.Windows.Forms.Button();
+            this.cmdEliminar = new System.Windows.Forms.Button();
             this.cmdBuscar = new System.Windows.Forms.Button();
+            this.lstProvincia = new System.Windows.Forms.ComboBox();
+            this.lstDeporte = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // textBox7
+            // txtDireccion
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.textBox7.Location = new System.Drawing.Point(161, 285);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 31;
+            this.txtDireccion.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDireccion.Location = new System.Drawing.Point(161, 209);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(100, 20);
+            this.txtDireccion.TabIndex = 29;
             // 
-            // textBox6
+            // txtApellido
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.textBox6.Location = new System.Drawing.Point(161, 247);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 30;
+            this.txtApellido.BackColor = System.Drawing.SystemColors.Window;
+            this.txtApellido.Location = new System.Drawing.Point(161, 171);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.TabIndex = 28;
             // 
-            // textBox5
+            // txtNombre
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.textBox5.Location = new System.Drawing.Point(161, 209);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 29;
+            this.txtNombre.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNombre.Location = new System.Drawing.Point(161, 137);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 27;
             // 
-            // textBox4
+            // txtCodigoEntrenador
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.textBox4.Location = new System.Drawing.Point(161, 171);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 28;
+            this.txtCodigoEntrenador.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCodigoEntrenador.Location = new System.Drawing.Point(161, 102);
+            this.txtCodigoEntrenador.Name = "txtCodigoEntrenador";
+            this.txtCodigoEntrenador.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigoEntrenador.TabIndex = 26;
             // 
-            // textBox3
+            // txtCodigoEntrBuscado
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.textBox3.Location = new System.Drawing.Point(161, 137);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 27;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.textBox2.Location = new System.Drawing.Point(161, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 26;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.textBox1.Location = new System.Drawing.Point(161, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 25;
+            this.txtCodigoEntrBuscado.BackColor = System.Drawing.SystemColors.Window;
+            this.txtCodigoEntrBuscado.Location = new System.Drawing.Point(161, 9);
+            this.txtCodigoEntrBuscado.Name = "txtCodigoEntrBuscado";
+            this.txtCodigoEntrBuscado.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigoEntrBuscado.TabIndex = 25;
             // 
             // lblDeporteEntr
             // 
@@ -182,15 +163,16 @@
             this.lblCodigoEntrenador.TabIndex = 18;
             this.lblCodigoEntrenador.Text = "Codigo Entrenador";
             // 
-            // cmdGuardar
+            // cmdEliminar
             // 
-            this.cmdGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdGuardar.Location = new System.Drawing.Point(198, 334);
-            this.cmdGuardar.Name = "cmdGuardar";
-            this.cmdGuardar.Size = new System.Drawing.Size(75, 23);
-            this.cmdGuardar.TabIndex = 17;
-            this.cmdGuardar.Text = "Guardar";
-            this.cmdGuardar.UseVisualStyleBackColor = true;
+            this.cmdEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdEliminar.Location = new System.Drawing.Point(198, 334);
+            this.cmdEliminar.Name = "cmdEliminar";
+            this.cmdEliminar.Size = new System.Drawing.Size(75, 23);
+            this.cmdEliminar.TabIndex = 17;
+            this.cmdEliminar.Text = "Eliminar";
+            this.cmdEliminar.UseVisualStyleBackColor = true;
+            this.cmdEliminar.Click += new System.EventHandler(this.cmdEliminar_Click);
             // 
             // cmdBuscar
             // 
@@ -201,19 +183,48 @@
             this.cmdBuscar.TabIndex = 16;
             this.cmdBuscar.Text = "Buscar";
             this.cmdBuscar.UseVisualStyleBackColor = true;
+            this.cmdBuscar.Click += new System.EventHandler(this.cmdBuscar_Click);
+            // 
+            // lstProvincia
+            // 
+            this.lstProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstProvincia.FormattingEnabled = true;
+            this.lstProvincia.Items.AddRange(new object[] {
+            "BOLIVAR",
+            "CAÑAR",
+            "CHIMBORAZO",
+            "PICHINCHA"});
+            this.lstProvincia.Location = new System.Drawing.Point(161, 251);
+            this.lstProvincia.Name = "lstProvincia";
+            this.lstProvincia.Size = new System.Drawing.Size(100, 21);
+            this.lstProvincia.TabIndex = 30;
+            // 
+            // lstDeporte
+            // 
+            this.lstDeporte.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lstDeporte.FormattingEnabled = true;
+            this.lstDeporte.Items.AddRange(new object[] {
+            "TENIS",
+            "BASQUET",
+            "CICLISMO",
+            "FUTBOL"});
+            this.lstDeporte.Location = new System.Drawing.Point(161, 289);
+            this.lstDeporte.Name = "lstDeporte";
+            this.lstDeporte.Size = new System.Drawing.Size(100, 21);
+            this.lstDeporte.TabIndex = 31;
             // 
             // frmEliminarEntrenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 370);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lstDeporte);
+            this.Controls.Add(this.lstProvincia);
+            this.Controls.Add(this.txtDireccion);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtCodigoEntrenador);
+            this.Controls.Add(this.txtCodigoEntrBuscado);
             this.Controls.Add(this.lblDeporteEntr);
             this.Controls.Add(this.lblProvinciaEntr);
             this.Controls.Add(this.lblDireccionEntr);
@@ -221,24 +232,21 @@
             this.Controls.Add(this.lblNombreEntr);
             this.Controls.Add(this.lblCodigoEntrenadorBusq);
             this.Controls.Add(this.lblCodigoEntrenador);
-            this.Controls.Add(this.cmdGuardar);
+            this.Controls.Add(this.cmdEliminar);
             this.Controls.Add(this.cmdBuscar);
             this.Name = "frmEliminarEntrenador";
-            this.Text = "frmEliminarEntrenador";
+            this.Text = "Eliminar Entrenador";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCodigoEntrenador;
+        private System.Windows.Forms.TextBox txtCodigoEntrBuscado;
         private System.Windows.Forms.Label lblDeporteEntr;
         private System.Windows.Forms.Label lblProvinciaEntr;
         private System.Windows.Forms.Label lblDireccionEntr;
@@ -246,7 +254,9 @@
         private System.Windows.Forms.Label lblNombreEntr;
         private System.Windows.Forms.Label lblCodigoEntrenadorBusq;
         private System.Windows.Forms.Label lblCodigoEntrenador;
-        private System.Windows.Forms.Button cmdGuardar;
+        private System.Windows.Forms.Button cmdEliminar;
         private System.Windows.Forms.Button cmdBuscar;
+        private System.Windows.Forms.ComboBox lstProvincia;
+        private System.Windows.Forms.ComboBox lstDeporte;
     }
 }

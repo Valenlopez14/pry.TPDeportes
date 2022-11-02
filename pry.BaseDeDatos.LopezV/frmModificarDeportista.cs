@@ -59,6 +59,17 @@ namespace pry.BaseDeDatos.LopezV
             ModificarDepor.Deporte = Convert.ToString(lstDeporte.SelectedItem);
             ModificarDepor.Modificar(txtCodigoDepor.Text);
 
+            //Limpiar Controles
+            txtApellido.Text = "";
+            txtDireccion.Text = "";
+            txtCodigoDepor.Text = "";
+            txtCodigoDeporBusc.Text = "";
+            txtDireccion.Text = "";
+            txtNombre.Text = "";
+            mskEdad.Text = "";
+            mskTelefono.Text = "";
+            lstDeporte.SelectedIndex = -1;
+
 
         }
 

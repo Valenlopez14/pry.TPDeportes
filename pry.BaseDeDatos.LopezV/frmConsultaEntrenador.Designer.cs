@@ -95,7 +95,7 @@
             this.Controls.Add(this.cmdListar);
             this.Controls.Add(this.GrillaConsultaEntr);
             this.Name = "frmConsultaEntrenador";
-            this.Text = "frmConsultaEntrenador";
+            this.Text = "Consulta Entrenador";
             ((System.ComponentModel.ISupportInitialize)(this.GrillaConsultaEntr)).EndInit();
             this.ResumeLayout(false);
 

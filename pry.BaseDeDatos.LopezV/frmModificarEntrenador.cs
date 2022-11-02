@@ -41,16 +41,7 @@ namespace pry.BaseDeDatos.LopezV
 
         private void cmdGuardar_Click(object sender, EventArgs e)
         {
-            //clsDeportista ModificarDepor = new clsDeportista();
 
-
-            //ModificarDepor.Nombre = txtNombre.Text;
-            //ModificarDepor.Apellido = txtApellido.Text;
-            //ModificarDepor.Direccion = txtDireccion.Text;
-            //ModificarDepor.Edad = Convert.ToInt32(mskEdad.Text);
-            //ModificarDepor.Telefono = Convert.ToInt32(mskTelefono.Text);
-            //ModificarDepor.Deporte = Convert.ToString(lstDeporte.SelectedItem);
-            //ModificarDepor.Modificar(txtCodigoDepor.Text);
             clsEntrenador ModificarEntr = new clsEntrenador();
 
             ModificarEntr.NombreEntrenador = txtNombre.Text;
@@ -59,6 +50,15 @@ namespace pry.BaseDeDatos.LopezV
             ModificarEntr.DeporteEntrenador = Convert.ToString(lstDeporte.SelectedItem);
             ModificarEntr.ProvinciaEntrenador = Convert.ToString(lstProvincia.SelectedItem);
             ModificarEntr.Modificar(txtCodigoEntr.Text);
+
+            //Limpiar Cajas de texto
+            txtNombre.Text = "";
+            txtApellido.Text = "";
+            txtDireccion.Text = "";
+            txtCodigoBusc.Text = "";
+            txtCodigoEntr.Text = "";
+            lstDeporte.SelectedItem = -1;
+            lstProvincia.SelectedItem = -1;
 
         }
     }

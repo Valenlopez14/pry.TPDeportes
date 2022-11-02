@@ -60,6 +60,7 @@ namespace pry.BaseDeDatos.LopezV
             txtCodigoEntr.Text = "";
             txtDireccionEntr.Text = "";
             txtNombreEntr.Text = "";
+            txtApellidoEntr.Text = "";
             lstProvinciaEntr.SelectedIndex = -1;
             lstDeporteEntr.SelectedIndex = -1;
         }

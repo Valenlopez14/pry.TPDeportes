@@ -243,7 +243,7 @@
             this.Controls.Add(this.lblCodigoDeportista);
             this.Controls.Add(this.cmdGuardar);
             this.Name = "frmModificarDeportista";
-            this.Text = "ModificarDeportista";
+            this.Text = "Modificar Deportista";
             this.Load += new System.EventHandler(this.frmModificarDeportista_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
