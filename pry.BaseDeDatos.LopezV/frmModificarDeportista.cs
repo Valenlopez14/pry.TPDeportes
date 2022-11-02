@@ -50,7 +50,6 @@ namespace pry.BaseDeDatos.LopezV
 
            clsDeportista ModificarDepor = new clsDeportista();
            
-            ModificarDepor.Direccion = txtDireccion.Text;
             ModificarDepor.Nombre = txtNombre.Text;
             ModificarDepor.Apellido = txtApellido.Text;
             ModificarDepor.Direccion = txtDireccion.Text;
