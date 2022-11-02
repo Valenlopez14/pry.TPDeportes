@@ -47,8 +47,23 @@ namespace pry.BaseDeDatos.LopezV
 
         private void cmdGuardar_Click(object sender, EventArgs e)
         {
-            string Codigo = txtCodigoDeporBusc.Text;
-            string SQL = "UPDATE DEPORTISTA SET ([DIRECCION], [TELEFONO], [EDAD], [DEPORTE]) WHERE ('" + Codigo + "'= [CODIGO DEPORTISTA])";
+
+           clsDeportista ModificarDepor = new clsDeportista();
+           
+            ModificarDepor.Direccion = txtDireccion.Text;
+            ModificarDepor.Nombre = txtNombre.Text;
+            ModificarDepor.Apellido = txtApellido.Text;
+            ModificarDepor.Direccion = txtDireccion.Text;
+            ModificarDepor.Edad = Convert.ToInt32(mskEdad.Text);
+            ModificarDepor.Telefono = Convert.ToInt32(mskTelefono.Text);
+            ModificarDepor.Deporte = Convert.ToString(lstDeporte.SelectedItem);
+            ModificarDepor.Modificar(txtCodigoDepor.Text);
+
+
+        }
+
+        private void mskEdad_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
 
         }
     }

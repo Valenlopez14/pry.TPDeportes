@@ -152,7 +152,7 @@
             // 
             // txtCodigoDepor
             // 
-            this.txtCodigoDepor.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.txtCodigoDepor.BackColor = System.Drawing.SystemColors.Window;
             this.txtCodigoDepor.Location = new System.Drawing.Point(140, 126);
             this.txtCodigoDepor.Name = "txtCodigoDepor";
             this.txtCodigoDepor.Size = new System.Drawing.Size(100, 20);
@@ -160,7 +160,7 @@
             // 
             // txtApellido
             // 
-            this.txtApellido.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtApellido.BackColor = System.Drawing.SystemColors.Window;
             this.txtApellido.Location = new System.Drawing.Point(140, 192);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(100, 20);
@@ -168,7 +168,7 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.txtDireccion.BackColor = System.Drawing.SystemColors.Window;
             this.txtDireccion.Location = new System.Drawing.Point(140, 226);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(100, 20);
@@ -183,21 +183,30 @@
             // 
             // mskTelefono
             // 
-            this.mskTelefono.Location = new System.Drawing.Point(140, 259);
+            this.mskTelefono.Location = new System.Drawing.Point(140, 258);
+            this.mskTelefono.Mask = "999999999";
             this.mskTelefono.Name = "mskTelefono";
             this.mskTelefono.Size = new System.Drawing.Size(100, 20);
             this.mskTelefono.TabIndex = 19;
             // 
             // mskEdad
             // 
-            this.mskEdad.Location = new System.Drawing.Point(140, 286);
+            this.mskEdad.Location = new System.Drawing.Point(140, 291);
+            this.mskEdad.Mask = "99";
             this.mskEdad.Name = "mskEdad";
             this.mskEdad.Size = new System.Drawing.Size(100, 20);
             this.mskEdad.TabIndex = 20;
+            this.mskEdad.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskEdad_MaskInputRejected);
             // 
             // lstDeporte
             // 
+            this.lstDeporte.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lstDeporte.FormattingEnabled = true;
+            this.lstDeporte.Items.AddRange(new object[] {
+            "TENIS",
+            "BASQUET",
+            "CICLISMO",
+            "FUTBOL"});
             this.lstDeporte.Location = new System.Drawing.Point(140, 325);
             this.lstDeporte.Name = "lstDeporte";
             this.lstDeporte.Size = new System.Drawing.Size(100, 21);
